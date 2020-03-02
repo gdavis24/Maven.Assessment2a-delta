@@ -17,7 +17,12 @@ public class BasicStringUtils {
      */
     public static String reverse(String string1)
     {
-        return null;
+        String output = "";
+        for (int i = string1.length() - 1; i >= 0; i--)
+        {
+            output = output + string1.charAt(i);
+        }
+        return output;
     }
 
     /**
