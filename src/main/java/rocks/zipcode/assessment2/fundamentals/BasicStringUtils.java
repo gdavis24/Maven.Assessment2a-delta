@@ -32,7 +32,18 @@ public class BasicStringUtils {
      */
     public static String reverseThenConcatenate(String string1, String string2)
     {
-        return null;
+        String output1 = "";
+        for (int i = string1.length() - 1; i >= 0; i--)
+        {
+            output1 = output1 + string1.charAt(i);
+        }
+
+        String output2 = "";
+        for (int i = string2.length() - 1; i >= 0; i--)
+        {
+            output2 = output2 + string2.charAt(i);
+        }
+        return output1 + output2;
     }
 
     /**
