@@ -1,5 +1,7 @@
 package rocks.zipcode.assessment2.fundamentals;
 
+import java.util.regex.Pattern;
+
 public class BasicStringUtils {
     /**
      * @param string1 - Base string to be added to
