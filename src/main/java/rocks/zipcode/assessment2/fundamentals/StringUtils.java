@@ -34,7 +34,10 @@ public class StringUtils
      */
     public static String repeatString(String stringToBeRepeated, int numberOfTimeToRepeat)
     {
-        return null;
+//        String repeated = StringUtils.repeatString(stringToBeRepeated, numberOfTimeToRepeat);
+        String repeated = new String(new char[numberOfTimeToRepeat]).replace("\0", stringToBeRepeated);
+
+        return repeated;
     }
 
     /**
