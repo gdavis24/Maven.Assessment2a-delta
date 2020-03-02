@@ -3,14 +3,18 @@ package rocks.zipcode.assessment2.fundamentals;
 /**
  * @author leon on 28/11/2018.
  */
-public class StringUtils {
+public class StringUtils
+{
     /**
      * @param stringToBePadded - string value to be flushed right
      * @param amountOfPadding - amount of padding to be flushed left
      * @return `stringToBePadded` flushed right by left-padding
      */
-    public static String padLeft(String stringToBePadded, int amountOfPadding) {
-        return null;
+    public static String padLeft(String stringToBePadded, int amountOfPadding)
+    {
+        //StringUtils.padLeft(stringToBePadded, amountOfPadding);
+        return String.format("%" + amountOfPadding + "s", stringToBePadded);
+
     }
 
     /**
@@ -18,8 +22,9 @@ public class StringUtils {
      * @param amountOfPadding - amount of padding to be flushed right
      * @return `stringToBePadded` flushed right by right-padding
      */
-    public static String padRight(String stringToBePadded, int amountOfPadding) {
-        return null;
+    public static String padRight(String stringToBePadded, int amountOfPadding)
+    {
+        return String.format("%-" + amountOfPadding + "s", stringToBePadded);
     }
 
     /**
@@ -27,7 +32,8 @@ public class StringUtils {
      * @param numberOfTimeToRepeat - number of times to repeat `stringToBeRepeated`
      * @return the string repeated and concatenated `n` times
      */
-    public static String repeatString(String stringToBeRepeated, int numberOfTimeToRepeat) {
+    public static String repeatString(String stringToBeRepeated, int numberOfTimeToRepeat)
+    {
         return null;
     }
 
@@ -35,7 +41,8 @@ public class StringUtils {
      * @param string - string to be evaluated
      * @return - true if string only contains alpha characters
      */
-    public static Boolean isAlphaString(String string) {
+    public static Boolean isAlphaString(String string)
+    {
         return null;
     }
 
@@ -43,7 +50,8 @@ public class StringUtils {
      * @param string - string to be evaluated
      * @return - true if string only contains numeric characters
      */
-    public static Boolean isNumericString(String string) {
+    public static Boolean isNumericString(String string)
+    {
         return null;
     }
 
@@ -51,7 +59,8 @@ public class StringUtils {
      * @param string - string to be evaluated
      * @return - true if string only contains special characters
      */
-    public static Boolean isSpecialCharacterString(String string) {
+    public static Boolean isSpecialCharacterString(String string)
+    {
         return null;
     }
 }
