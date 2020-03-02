@@ -10,35 +10,49 @@ public class Person {
      * @param name - name of person
      * @param address - address of person
      */
-    public Person(Long id, String name, Address address) {
+    public Person(Long id, String name, Address address)
+    {
+
     }
 
-    public Person() {
+    public Person()
+    {
+
     }
 
-    public Long getId() {
+    public Long getId()
+    {
         return null;
     }
 
-    public void setId(Long id) {
+    public void setId(Long id)
+    {
+
     }
 
-    public String getName() {
+    public String getName()
+    {
         return null;
     }
 
-    public void setName(String name) {
+    public void setName(String name)
+    {
+
     }
 
-    public Address getAddress() {
+    public Address getAddress()
+    {
         return null;
     }
 
-    public void setAddress(Address address) {
+    public void setAddress(Address address)
+    {
+
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o)
+    {
         return (Boolean)null;
     }
 }
