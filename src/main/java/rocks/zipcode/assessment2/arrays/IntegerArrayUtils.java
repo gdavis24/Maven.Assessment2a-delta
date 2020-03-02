@@ -32,7 +32,15 @@ public class IntegerArrayUtils
      */
     public static Integer[] replace(Integer[] integerArray, int indexToInsertAt, Integer valueToBeInserted)
     {
-        return null;
+//        int index = 0;
+//        for (int i = 0; i < integerArray.length; i++) {
+//            if (integerArray[i].equals(indexToInsertAt)) {
+//                integerArray[indexToInsertAt] = valueToBeInserted;
+//                index++;
+//            }
+//        }
+        integerArray[indexToInsertAt] = valueToBeInserted;
+        return integerArray;
     }
 
     /**
