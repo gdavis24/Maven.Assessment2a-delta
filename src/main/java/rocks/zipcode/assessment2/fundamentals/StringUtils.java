@@ -55,7 +55,7 @@ public class StringUtils
      */
     public static Boolean isNumericString(String string)
     {
-        return null;
+        return ((string != null) && (!string.equals("")) && (string.matches("^[0-9]*$")));
     }
 
     /**
