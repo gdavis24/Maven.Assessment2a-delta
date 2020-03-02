@@ -8,33 +8,41 @@ package rocks.zipcode.assessment2.generics;
  * Shelter<Person> farmHouse = new Shelter<Person>();
  * Shelter<Dog> dogHouse = new Shelter<Dog>();
  */
-public class Shelter<_> {
-    public Shelter() {
+public class Shelter<_>
+{
+    public Shelter()
+    {
         throw new NullPointerException();
     }
 
     /**
      * @return the number of item in the shelter
      */
-    public int size() {
+    public int size()
+    {
         return -1;
     }
 
-    public void add(Object object) {
+    public void add(Object object)
+    {
     }
 
-    public Boolean contains(Object object) {
+    public Boolean contains(Object object)
+    {
         return null;
     }
 
-    public void remove(Object object) {
+    public void remove(Object object)
+    {
     }
 
-    public Object get(Integer index) {
+    public Object get(Integer index)
+    {
         return null;
     }
 
-    public Integer getIndexOf(Object ageable) {
+    public Integer getIndexOf(Object ageable)
+    {
         return 0;
     }
 }

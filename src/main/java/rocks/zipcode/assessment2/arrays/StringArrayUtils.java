@@ -1,5 +1,7 @@
 package rocks.zipcode.assessment2.arrays;
 
+import java.util.Arrays;
+
 /**
  * @author leon on 28/11/2018.
  */
@@ -12,7 +14,8 @@ public class StringArrayUtils {
      */
     public static String[] getSubArray(String[] arrayToBeSpliced, int startingIndex, int endingIndex)
     {
-        return null;
+        String[] newArray = Arrays.copyOfRange(arrayToBeSpliced, startingIndex, endingIndex);
+        return newArray;
     }
 
 
@@ -23,12 +26,13 @@ public class StringArrayUtils {
      */
     public static String[] getEndingArray(String[] arrayToBeSpliced, int startingIndex)
     {
-        int i = 0;
-        String[] newArr = new String[arrayToBeSpliced.length - i];
-        for (i = 0; i < arrayToBeSpliced.length; i++)
-        {
-
-        }
+//        int i = 0;
+//        String[] newArr = new String[arrayToBeSpliced.length - i];
+//        for (i = 0; i < arrayToBeSpliced.length; i++)
+//        {
+//
+//        }
+        String[] newArr = Arrays.copyOfRange(arrayToBeSpliced, startingIndex, arrayToBeSpliced.length);
         return newArr;
     }
 }
