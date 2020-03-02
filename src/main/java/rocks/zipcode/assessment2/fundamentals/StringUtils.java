@@ -46,7 +46,7 @@ public class StringUtils
      */
     public static Boolean isAlphaString(String string)
     {
-        return null;
+        return ((string != null) && (!string.equals("")) && (string.matches("^[a-z A-Z]*$")));
     }
 
     /**
