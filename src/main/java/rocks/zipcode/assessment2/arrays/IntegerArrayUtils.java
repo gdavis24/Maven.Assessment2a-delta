@@ -50,7 +50,8 @@ public class IntegerArrayUtils
      */
     public static Integer get(Integer[] integerArray, Integer indexToFetch)
     {
-        return null;
+
+        return integerArray[indexToFetch];
     }
 
     /**
