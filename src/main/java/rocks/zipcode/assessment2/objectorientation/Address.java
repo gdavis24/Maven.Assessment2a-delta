@@ -53,29 +53,32 @@ public class Address
 
     public String getCity()
     {
-        return null;
+        return city;
     }
 
     public void setCity(String city)
     {
+        this.city = city;
     }
 
     public String getState()
     {
-        return null;
+        return state;
     }
 
     public void setState(String state)
     {
+        this.state = state;
     }
 
     public String getZipcode()
     {
-        return null;
+        return zipcode;
     }
 
     public void setZipcode(String zipcode)
     {
+        this.zipcode = zipcode;
     }
 
     @Override
