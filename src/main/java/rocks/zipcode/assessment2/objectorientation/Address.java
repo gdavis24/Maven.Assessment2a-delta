@@ -29,6 +29,9 @@ public class Address
         this.city = city;
         this.state = state;
         this.zipcode = zipcode;
+
+
+
     }
 
     public String getAddressLine1()
@@ -84,6 +87,12 @@ public class Address
     @Override
     public boolean equals(Object o)
     {
-        return (Boolean)null;
+        if (addressLine1 + addressLine2 + city + state + zipcode == addressLine1 + addressLine2 + city + state + zipcode){
+            return true;
+        }
+        else {
+            return false;
+        }
+
     }
 }
