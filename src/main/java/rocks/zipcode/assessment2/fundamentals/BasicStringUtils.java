@@ -53,7 +53,8 @@ public class BasicStringUtils {
      */
     public static String removeCharacters(String string, String charactersToRemove)
     {
-        return null;
+        String newString = string.replaceAll(charactersToRemove, "");
+        return newString;
     }
 
     /**
@@ -63,6 +64,12 @@ public class BasicStringUtils {
      */
     public static String removeCharactersThenReverse(String string, String charactersToRemove)
     {
-        return null;
+        String newString = string.replace(charactersToRemove, "");
+        String outputReverse = "";
+        for (int i = newString.length() - 1; i >= 0; i--)
+        {
+            outputReverse = outputReverse + newString.charAt(i);
+        }
+        return outputReverse;
     }
 }
