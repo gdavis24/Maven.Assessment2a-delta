@@ -50,7 +50,6 @@ public class IntegerArrayUtils
      */
     public static Integer get(Integer[] integerArray, Integer indexToFetch)
     {
-
         return integerArray[indexToFetch];
     }
 
@@ -60,7 +59,18 @@ public class IntegerArrayUtils
      */
     public static Integer[] incrementEvenDecrementOdd(Integer[] integerArray)
     {
-        return null;
+        for (int i = 0; i < integerArray.length; i++)
+        {
+            if ((integerArray[i].intValue() % 2) == 0)
+            {
+                integerArray[i]++;
+            }
+            else
+            {
+                integerArray[i]--;
+            }
+        }
+        return integerArray;
     }
 
     /**
@@ -69,7 +79,14 @@ public class IntegerArrayUtils
      */
     public static Integer[] incrementEven(Integer[] integerArray)
     {
-        return null;
+        for (int i = 0; i < integerArray.length; i++)
+        {
+            if ((integerArray[i].intValue() % 2) == 0)
+            {
+                integerArray[i]++;
+            }
+        }
+        return integerArray;
     }
 
     /**
@@ -78,6 +95,13 @@ public class IntegerArrayUtils
      */
     public static Integer[] decrementOdd(Integer[] input)
     {
-        return null;
+        for (int i = 0; i < input.length; i++)
+        {
+            if ((input[i].intValue() % 2) == 1)
+            {
+                input[i]--;
+            }
+        }
+        return input;
     }
 }
