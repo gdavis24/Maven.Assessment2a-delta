@@ -1,4 +1,12 @@
+
 package rocks.zipcode.assessment2.generics;
+
+
+import rocks.zipcode.assessment2.generics.ageable.Ageable;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 
 /**
@@ -8,11 +16,13 @@ package rocks.zipcode.assessment2.generics;
  * Shelter<Person> farmHouse = new Shelter<Person>();
  * Shelter<Dog> dogHouse = new Shelter<Dog>();
  */
-public class Shelter<_>
+public class Shelter<Object extends Ageable> implements Iterable<Ageable>
 {
+    private List<Ageable> shelter;
+
     public Shelter()
     {
-        throw new NullPointerException();
+        this.shelter = new ArrayList<>();
     }
 
     /**
@@ -20,29 +30,36 @@ public class Shelter<_>
      */
     public int size()
     {
-        return -1;
+        return shelter.size();
     }
 
     public void add(Object object)
     {
+        shelter.add(object);
     }
 
     public Boolean contains(Object object)
     {
-        return null;
+        return shelter.contains(object);
     }
 
     public void remove(Object object)
     {
+        shelter.remove(object);
     }
 
     public Object get(Integer index)
     {
-        return null;
+        return (Object) shelter.get(index);
     }
 
     public Integer getIndexOf(Object ageable)
     {
-        return 0;
+        return shelter.indexOf(ageable);
+    }
+
+    @Override
+    public Iterator<Ageable> iterator() {
+        return null;
     }
 }
