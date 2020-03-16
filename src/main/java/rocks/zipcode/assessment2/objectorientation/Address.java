@@ -13,6 +13,11 @@ public class Address
 
     public Address()
     {
+        addressLine1 = "";
+        addressLine2 = "";
+        city = "";
+        state = "";
+        zipcode = "";
     }
 
     /**
@@ -85,14 +90,46 @@ public class Address
     }
 
     @Override
+    public String toString() {
+        return "Address{addressLine1='" + addressLine1 + "', addressLine2='" + addressLine2 + "', city='" + city + "', state='" + state + "', zipcode='" + zipcode + "'}";
+    }
+
+    @Override
     public boolean equals(Object o)
     {
-        if (addressLine1 + addressLine2 + city + state + zipcode == addressLine1 + addressLine2 + city + state + zipcode){
-            return true;
-        }
-        else {
+//        if (addressLine1 + addressLine2 + city + state + zipcode == addressLine1 + addressLine2 + city + state + zipcode){
+//            return true;
+//        }
+//        else {
+//            return false;
+//        }
+        if (o == null) {
             return false;
         }
+
+        if (!(o instanceof Address)) {
+            return false;
+        }
+        Address a = (Address) o;
+
+        if(!this.addressLine1.equals(((Address) o).addressLine1)){
+            return false;
+        }
+        if(!this.addressLine2.equals(((Address) o).addressLine2)){
+            return false;
+        }
+        if(!this.city.equals(((Address) o).city)){
+            return false;
+        }
+        if(!this.state.equals(((Address) o).state)){
+            return false;
+        }
+        if(!this.zipcode.equals(((Address) o).zipcode)){
+            return false;
+        }
+
+
+        return a.toString().equals(o.toString());
 
     }
 }
