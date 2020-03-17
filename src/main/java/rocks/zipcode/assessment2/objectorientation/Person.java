@@ -56,8 +56,23 @@ public class Person extends Address{
     }
 
     @Override
+    public String toString() {
+        return "Person{id=" + id + ", name='" + name + "', address=" + getAddress() + "}";
+    }
+
+    @Override
     public boolean equals(Object o)
     {
-        return (Boolean)null;
+        if (o == null){
+            return false;
+        }
+        if (!(o instanceof Person)){
+            return false;
+        }
+
+        if (!this.toString().equals(o.toString())){
+            return false;
+        }
+        return true;
     }
 }
