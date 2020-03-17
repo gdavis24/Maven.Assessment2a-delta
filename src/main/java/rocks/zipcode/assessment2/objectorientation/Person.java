@@ -15,12 +15,14 @@ public class Person extends Address{
     public Address address;
     public Person(Long id, String name, Address address)
     {
-
+        this.id = id;
+        this.name = name;
+        this.address = address;
     }
 
     public Person()
     {
-
+        this(Long.MIN_VALUE, "", new Address());
     }
 
     public Long getId()
