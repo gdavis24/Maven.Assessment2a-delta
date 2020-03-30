@@ -10,16 +10,16 @@ public class Inventory {
     /**
      * @param strings list of strings to add / remove / fetch from
      */
-    List<String> myList = new ArrayList<String>();
+    List<String> myList;
     public Inventory(List<String> strings) {
-
+        this.myList = new ArrayList<>(strings);
     }
 
     /**
      * nullary constructor initializes a new list
      */
     public Inventory() {
-
+        this.myList = new ArrayList<>();
     }
 
     /**
@@ -36,7 +36,7 @@ public class Inventory {
      */
     public void removeItemFromInventory(String item) {
         myList.remove(item);
-        return;
+
     }
 
     /**
